@@ -1,0 +1,13 @@
+{
+  "then": {
+    "effect": "deny"
+  },
+  "if": {
+    "allOf": [
+      {
+        "field": "type",
+        "equals": "Microsoft.Storage/storageAccounts"
+      }
+    ]
+  }
+}

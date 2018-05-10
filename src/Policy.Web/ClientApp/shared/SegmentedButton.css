@@ -1,0 +1,17 @@
+.segmentedButton {
+  display: inline-block;
+}
+
+.segmentedButtonOption {
+  border: none;
+  background-color: transparent;
+}
+
+.segmentedButtonOption:hover {
+  background-color: beige;
+}
+
+.segmentedButtonOption.selected {
+  font-weight: 700;
+  background-color: aquamarine;
+}

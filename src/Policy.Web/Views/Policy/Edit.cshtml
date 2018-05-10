@@ -1,0 +1,21 @@
+﻿@model EditPolicyViewModel
+
+@{
+    ViewData["Title"] = "Edit Policy";
+    Layout = "_ReactLayout";
+}
+
+<div id="reactApp" class="container">
+</div>
+
+@section scripts {
+    <script>
+        let apiDetails = window.apiDetails = {};
+        apiDetails.policyId = '@Model.PolicyId';
+        apiDetails.getPolicyEndpoint = '@Model.GetPolicyEndpoint';
+        apiDetails.savePolicyEndpoint = '@Model.SavePolicyEndpoint';
+        apiDetails.getSuggestedValuesEndpoint = '@Model.GetSuggestedValuesEndpoint';
+        apiDetails.changeEffectEndpoint = '@Model.ChangeEffectEndpoint';
+    </script>
+    <script src="~/dist/index.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,1107 @@
+{
+    "then":  {
+                 "effect":  "deny"
+             },
+    "if":  {
+               "not":  {
+                           "allOf":  [
+                                         {
+                                             "anyOf":  [
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/roleAssignments",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/roleAssignments/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/roleDefinitions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/roleDefinitions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/permissions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/permissions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/locks",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/locks/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/policyDefinitions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/policyDefinitions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/policyAssignments",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/policyAssignments/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Authorization/providerOperations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Authorization/providerOperations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Commerce/usageAggregates",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Commerce/usageAggregates/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Commerce/estimateResourceSpend",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Commerce/estimateResourceSpend/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Commerce/subscriberUsageAggregates",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Commerce/subscriberUsageAggregates/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Commerce/delegatedProviderSubscriptions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Commerce/delegatedProviderSubscriptions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Commerce/delegatedProviderSubscriptions/delegatedUsageAggregates",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Commerce/delegatedProviderSubscriptions/delegatedUsageAggregates/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/galleryItems",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/galleryItems/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/search",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/search/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/suggest",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/suggest/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/curation",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/curation/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/curationcontent",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/curationcontent/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/curationextract",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/curationextract/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Gallery/portal",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Gallery/portal/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Insights/eventtypes",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Insights/eventtypes/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Insights/alertrules",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Insights/alertrules/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Insights/metricDefinitions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Insights/metricDefinitions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/tenants",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/tenants/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/locations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/locations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/providers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/providers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/checkresourcename",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/checkresourcename/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/resources",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/resources/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/resources",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/resources/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/providers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/providers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/operationresults",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/operationresults/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/resourceGroups",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/resourceGroups/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/resourceGroups",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/resourceGroups/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/resourceGroups/resources",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/resourceGroups/resources/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/locations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/locations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/tagNames",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/tagNames/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/subscriptions/tagNames/tagValues",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/subscriptions/tagNames/tagValues/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/deployments",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/deployments/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/deployments/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/deployments/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/links",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/links/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/applicationRegistrations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/applicationRegistrations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/offers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/offers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/extensionsMetadata",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/extensionsMetadata/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/delegatedProviders",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/delegatedProviders/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/delegatedProviders/offers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/delegatedProviders/offers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Resources/delegatedProviders/offers/estimatePrice",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Resources/delegatedProviders/offers/estimatePrice/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/directoryTenants",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/directoryTenants/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/configurations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/configurations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/subscriptions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/subscriptions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/subscriptions/acquiredPlans",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/subscriptions/acquiredPlans/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/delegatedOffers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/delegatedOffers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/offers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/offers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Subscriptions/offers/offerDelegations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Subscriptions/offers/offerDelegations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Storage/storageaccounts",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Storage/storageaccounts/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Storage/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Storage/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Storage/usages",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Storage/usages/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Storage/checkNameAvailability",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Storage/checkNameAvailability/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Storage/locations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Storage/locations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Storage/locations/quotas",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Storage/locations/quotas/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/locations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/locations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/locations/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/locations/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/locations/usages",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/locations/usages/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/locations/operationResults",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/locations/operationResults/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/NetworkInterfaces",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/NetworkInterfaces/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/VirtualNetworks",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/VirtualNetworks/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/NetworkSecurityGroups",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/NetworkSecurityGroups/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/PublicIpAddresses",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/PublicIpAddresses/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/LoadBalancers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/LoadBalancers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/RouteTables",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/RouteTables/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/VirtualNetworkGateways",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/VirtualNetworkGateways/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/LocalNetworkGateways",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/LocalNetworkGateways/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/Connections",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/Connections/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Network/DnsZones",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Network/DnsZones/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.KeyVault/vaults",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.KeyVault/vaults/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.KeyVault/vaults/secrets",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.KeyVault/vaults/secrets/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.KeyVault/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.KeyVault/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/availabilitySets",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/availabilitySets/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachines",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachines/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachines/extensions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachines/extensions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/locations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/locations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/locations/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/locations/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/locations/publishers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/locations/publishers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/locations/usages",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/locations/usages/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/locations/vmSizes",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/locations/vmSizes/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachineScaleSets",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachineScaleSets/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachineScaleSets/extensions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachineScaleSets/extensions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachineScaleSets/virtualMachines",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachineScaleSets/networkInterfaces",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachineScaleSets/networkInterfaces/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/networkInterfaces",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/networkInterfaces/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/pricingTiers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/pricingTiers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/quotaSettings",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/quotaSettings/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/metadata",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/metadata/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/extensions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/extensions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots/extensions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/extensions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/instances",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/instances/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots/instances",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/instances/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/instances/extensions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/instances/extensions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots/instances/extensions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/instances/extensions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/publishingUsers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/publishingUsers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/ishostnameavailable",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/ishostnameavailable/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/isusernameavailable",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/isusernameavailable/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sourceControls",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sourceControls/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/availableStacks",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/availableStacks/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/listSitesAssignedToHostName",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/listSitesAssignedToHostName/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/hostNameBindings",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/hostNameBindings/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/domainOwnershipIdentifiers",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/domainOwnershipIdentifiers/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots/hostNameBindings",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/hostNameBindings/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/operations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/operations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/certificates",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/certificates/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/serverFarms",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/serverFarms/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/runtimes",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/runtimes/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/metrics",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/metrics/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/metricDefinitions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/metricDefinitions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots/metrics",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/metrics/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/slots/metricDefinitions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/slots/metricDefinitions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/serverFarms/metrics",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/serverFarms/metrics/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/serverFarms/metricDefinitions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/serverFarms/metricDefinitions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/serverFarms/usages",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/serverFarms/usages/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/sites/recommendations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/sites/recommendations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/recommendations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/recommendations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/georegions",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/georegions/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/deploymentLocations",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/deploymentLocations/*"
+                                                           },
+                                                           {
+                                                               "equals":  "Microsoft.Web/validate",
+                                                               "field":  "type"
+                                                           },
+                                                           {
+                                                               "field":  "type",
+                                                               "like":  "Microsoft.Web/validate/*"
+                                                           }
+                                                       ]
+                                         },
+                                         {
+                                             "not":  {
+                                                         "anyOf":  [
+                                                                       {
+                                                                           "allOf":  [
+                                                                                         {
+                                                                                             "exists":  "true",
+                                                                                             "field":  "Microsoft.Compute/virtualMachines/sku.name"
+                                                                                         },
+                                                                                         {
+                                                                                             "not":  {
+                                                                                                         "in":  [
+                                                                                                                    "Basic_A0",
+                                                                                                                    "Basic_A1",
+                                                                                                                    "Basic_A2",
+                                                                                                                    "Basic_A3",
+                                                                                                                    "Basic_A4",
+                                                                                                                    "Standard_A0",
+                                                                                                                    "Standard_A1",
+                                                                                                                    "Standard_A2",
+                                                                                                                    "Standard_A3",
+                                                                                                                    "Standard_A4",
+                                                                                                                    "Standard_A5",
+                                                                                                                    "Standard_A6",
+                                                                                                                    "Standard_A7",
+                                                                                                                    "Standard_D1",
+                                                                                                                    "Standard_D2",
+                                                                                                                    "Standard_D3",
+                                                                                                                    "Standard_D4",
+                                                                                                                    "Standard_D11",
+                                                                                                                    "Standard_D12",
+                                                                                                                    "Standard_D13",
+                                                                                                                    "Standard_D14",
+                                                                                                                    "Standard_D1_v2",
+                                                                                                                    "Standard_D2_v2",
+                                                                                                                    "Standard_D3_v2",
+                                                                                                                    "Standard_D4_v2",
+                                                                                                                    "Standard_D5_v2",
+                                                                                                                    "Standard_D11_v2",
+                                                                                                                    "Standard_D12_v2",
+                                                                                                                    "Standard_D13_v2",
+                                                                                                                    "Standard_D14_v2"
+                                                                                                                ],
+                                                                                                         "field":  "Microsoft.Compute/virtualMachines/sku.name"
+                                                                                                     }
+                                                                                         }
+                                                                                     ]
+                                                                       },
+                                                                       {
+                                                                           "allOf":  [
+                                                                                         {
+                                                                                             "exists":  "true",
+                                                                                             "field":  "Microsoft.Storage/storageAccounts/sku.name"
+                                                                                         },
+                                                                                         {
+                                                                                             "not":  {
+                                                                                                         "in":  [
+                                                                                                                    "Premium_LRS",
+                                                                                                                    "Standard_LRS"
+                                                                                                                ],
+                                                                                                         "field":  "Microsoft.Storage/storageAccounts/sku.name"
+                                                                                                     }
+                                                                                         }
+                                                                                     ]
+                                                                       }
+                                                                   ]
+                                                     }
+                                         }
+                                     ]
+                       }
+           }
+}

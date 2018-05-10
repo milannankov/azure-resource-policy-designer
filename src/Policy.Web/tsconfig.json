@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "es2015",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "jsx": "react",
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "react",
+      "react-dom",
+      "webpack-env"
+    ]
+  },
+  "include": [
+    "./ClientApp/**/*.ts",
+    "./ClientApp/**/*.tsx"
+  ],
+  "exclude": [
+    "bin",
+    "node_modules"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "errorsAsWarnings": false
+  }
+}

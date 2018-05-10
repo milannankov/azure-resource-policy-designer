@@ -1,0 +1,11 @@
+### wwwroot ###
+wwwroot/lib/
+wwwroot/data/policies
+wwwroot/dist/
+
+### Client App ###
+ClientApp/**/*.js
+ClientApp/**/*.js.map
+
+### Allow ###
+!build/

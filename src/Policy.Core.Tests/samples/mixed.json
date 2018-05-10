@@ -1,0 +1,40 @@
+{
+  "then": {
+    "effect": "deny"
+  },
+  "if": {
+    "allOf": [
+      {
+        "field": "type",
+        "equals": "Microsoft.Storage/storageAccounts"
+      },
+      {
+        "not": {
+          "field": "Microsoft.Storage/storageAccounts/enableBlobEncryption",
+          "equals": "True"
+        }
+      },
+      {
+        "not": {
+          "field": "location",
+          "in": "[parameters('listOfAllowedLocations')]"
+        }
+      },
+      {
+        "not": {
+          "field": "[concat('tags.',parameters('tagName'))]",
+          "equals": "[parameters('tagValue')]"
+        }
+      },
+      {
+        "not": {
+          "field": "Microsoft.Compute/virtualMachines/sku.name",
+          "in": [
+            "Basic_A0",
+            "Basic_A1"
+          ]
+        }
+      }
+    ]
+  }
+}

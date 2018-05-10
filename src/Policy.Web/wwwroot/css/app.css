@@ -1,0 +1,553 @@
+/* 
+
+blue - #0078D7
+dark blue - #002050
+cyan - #00BCF2
+light gray - #D2D2D2
+gray - #737373
+dark gray - #505050
+green - #107C10
+orange - #D83B01
+
+*/
+
+.header {
+    height: 100px;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #0078D7;
+}
+
+.title {
+    font-size: 22px;
+    color: #0078D7;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.designerHost {
+    position: relative;
+}
+
+.mainActionButton {
+    
+    font-size: 22px;
+    background: none;
+    border: 0;
+    border: 1px solid #0078D7;
+    line-height: normal;
+    overflow: visible;
+    padding: 5px 10px;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: #0078D7;
+}
+
+.mainActionButton:hover {
+    background-color: #0078D7;
+    color: white;
+}
+
+.mainActionButton:disabled {
+    border: 1px solid #737373;
+    color: #737373;
+}
+
+.mainActions {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.mainActions .mainActionButton {
+    margin-left: 20px;
+}
+
+.existingPolicyText {
+    width: 100%;
+    height: 200px;
+}
+
+.appNavigation {
+    display: inline-block;
+}
+
+.appNavigationItem {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.appNavigation ul {
+    padding: 0;
+    list-style: none;
+}
+
+.policySection {
+    margin: 20px 0;
+}
+
+.policySectionTitle {
+    display: block;
+    font-weight: 700;
+    color: #002050;
+}
+
+.policySectionInfo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #737373;
+}
+
+.editorContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.conditionFormButtons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    vertical-align: middle;
+    text-align: right;
+    border-width: 1px 0 0;
+    border-style: solid;
+    background-color: #fafafa;
+    padding: .6em;
+    box-sizing: border-box;
+}
+
+.conditionFormButtons .k-button {
+    color: #444;
+    background-color: #fafafa;
+    border-color: #fafafa;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0 .16em;
+}
+
+.conditionFormElements {
+    padding-top: 20px;
+}
+
+.editorActionButton {
+    margin-left: 20px;
+}
+
+.k-dropdown {
+    width: 100%;
+}
+
+.k-combobox {
+    width: 100%;
+}
+
+.conditionForm {
+    position: relative;
+    height: 100%;
+    /* padding-top: 1em; */
+}
+
+.conditionInput {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.conditionInput.textArea {
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.radioLabel {
+    margin-right: 20px;
+}
+
+.inputLine {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.inputLine-Label {
+    line-height: 30px;
+}
+
+.formEditorContent {
+    display: table;
+    width: 100%;
+}
+
+.formEditorMainContainer {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.formEditorToggleContainer {
+    display: table-cell;
+    width: 40px;
+    overflow-x: hidden;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.formEditorToggleContainer.top {
+    vertical-align: top;
+}
+
+.formEditorToggle {
+    width: 30px;
+    height: 32px;
+    vertical-align: middle;
+    background-image: url('/images/fx.png');
+    background-position: center center;
+    background-size: 18px 18px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #F4F4F4;
+}
+
+.conditionFormLabel {
+    float: left;
+    clear: both;
+    width: 20%;
+    padding-top: 5px;
+    padding-left: 15px;
+    /* padding: .4em 0 1em; */
+    /* margin-left: 2%; */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.conditionFormEditor {
+    float: right;
+    clear: right;
+    width: 80%;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    /* margin-right: 2%; */
+    /* padding: 0 0 .6em; */
+}
+
+.formEditorToggle.active {
+    background-color: #F4F4F4;
+    border: 2px solid #C0C0C0;
+}
+
+.simpleInputBox {
+    padding-left: 10px;
+    height: 38px;
+    box-sizing: border-box;
+}
+
+.simpleInputBox.multiline {
+    height: 100px;
+}
+
+.wideInput {
+    width: 100%;
+}
+
+.k-window .k-window-content {
+    padding: 0;
+}
+
+.logicalNode.collapsed .logicalNodeHeader {
+    border: black 2px solid;
+}
+
+.logicalNodeHeader {
+    position: relative;
+    display: inline-block;
+    box-sizing: content-box;
+    height: 30px;
+    line-height: 30px;
+    /* background-color: #D2D2D2; */
+    color: #F4F4F4;
+    padding-left: 40px;
+}
+
+.policyNodeIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logicalNodeHeader:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logicalNodeHeader:hover .logicalNodeAddActions {
+    display: block;
+}
+
+.logicalNodeHeaderContent {
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    /* background-color: #0078D7; */
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 1px solid #0078D7; */
+    font-weight: 700;
+    color: black;
+}
+
+.logicalNodeAddActions {
+    display: none;
+    height: 30px;
+    padding-left: 10px;
+    float: left;
+    color: black;
+    background-color: white;
+}
+
+.logicalNodeAddActionsSeparator {
+    display: inline;
+    margin: 0px 10px;
+    border-left: #444 solid 1px;
+}
+
+.logicalNodeTextAction {
+
+}
+
+.logicalNodeChildren {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+.logicalNodeValueSelector select {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.logicalNodeValueSelector .segmentedButton {
+    height: 30px;
+    background-color: transparent;
+    color: black;
+}
+
+.logicalNodeValueSelector .segmentedButtonOption {
+    height: 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: transparent 1px solid;
+}
+
+.logicalNodeValueSelector .segmentedButtonOption.selected {
+    box-sizing: border-box;
+    /* background-color: white; */
+    
+border: black 1px solid;
+}
+
+.conditionNode {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.conditionNode:hover .conditionNodeActions{
+    display: block;
+}
+
+.conditionNodeHeader {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    /* background-color: #D2D2D2; */
+    /* background-image: url('/images/icon-condition.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px center; */
+    color: black;
+    padding-left: 30px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.conditionNodeHeaderContent {
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.conditionNodeField {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.conditionNodeOperator {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.conditionNodeValue {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* TreeView  */
+.treeView {
+    user-select: none;
+}
+
+.treeViewNode {
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.treeViewChildren {
+    margin-left: 20px;
+}
+
+.treeViewChildren.collapsed {
+    display: none;
+}
+
+.treeViewHeaderContent {
+    float: left;
+    width: calc(100% - 30px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 30px;
+}
+
+.treeViewHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.treeViewHeader:hover {
+    border-left: 2px solid #0078D7;
+}
+
+.treeViewNode.active > .treeViewHeader {
+    border: 2px solid #0078D7;;
+}
+
+.treeViewHeader::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.treeViewNodeExpander {
+    float: left;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.treeViewNodeExpander.noChildren {
+    opacity: 0;
+}
+
+/* Commands Pane */
+
+.commandsPane {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: white;
+    left: 0;
+    top: -120px;
+    text-align: center;
+    z-index: 10000;
+    padding-top: 20px;
+    border: solid 1px #CCC;
+    box-shadow: 5px 5px 20px #999;
+}
+
+.commandsPaneItem {
+    display: inline-block;
+    width: 115px;
+    margin: 0px 20px;
+    vertical-align: middle;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.commandsPaneItem:hover {
+    color: #0078D7;
+
+}
+
+.commandsPaneCaption {
+    font-size: 18px;
+}
+
+.commandsPaneIcon {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.commandsPaneShortcut{
+    font-size: 10px;
+}
+
+.commandsPane.shown {
+    animation-duration: 400ms;
+    animation-name: slidefromtop;
+    top: 0px;
+  }
+  
+  @keyframes slidefromtop {
+    from {
+      top:-120px;
+    }
+  
+    to {
+      top:0px;
+    }
+  }
+
+.commandsPane.collapsed {
+    animation-duration: 400ms;
+    animation-name: slidefrombottom;
+    top:-120px;
+  }
+  
+  @keyframes slidefrombottom {
+    from {
+        top:0px;
+    }
+  
+    to {
+      top:-120px;
+    }
+  }
+
+
