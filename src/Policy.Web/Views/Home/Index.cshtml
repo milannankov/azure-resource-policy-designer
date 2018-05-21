@@ -2,63 +2,48 @@
     ViewData["Title"] = "Home";
 }
 
-<div id="app" class="container">
-    <div class="appContent"></div>
-                <div class="header">
-                    <h1 class="title">Azure Resource Policy Designer</h1>
-                    <nav class="appNavigation">
-                        <ul>
-                            <li class="appNavigationItem"><a href="/">Home</a></li>
-                            <li class="appNavigationItem"><a href="https://github.com/milannankov/azure-resource-policy-designer" target="_blank">Github</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="designerHost">
-                    <div class="policySection">
-                        <span class="policySectionTitle">Create blank policy rule</span>
-                        <span class="policySectionInfo">This option allows you to start designing a new policy from scratch.</span>
-                        <div>
-                            <form method="POST" enctype="multipart/form-data" asp-controller="Policy" asp-action="new">
-                                <button class="mainActionButton" type="submit">Create New Policy</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="policySection">
-                        <span class="policySectionTitle">Edit existing policy rule</span>
-                        <span class="policySectionInfo">This option allows you to paste an existing policy rule and continue editing it using the visual designer.</span>
-                        <div>
-                            <form method="POST" enctype="multipart/form-data" asp-controller="Policy" asp-action="existing">
-                                <div>
-                                    <textarea class="existingPolicyText" name="JsonText">
-{
-  "then": {
-    "effect": "deny"
-  },
-  "if": {
-    "allOf": [
-      {
-        "field": "type",
-        "equals": "Microsoft.Storage/storageAccounts"
-      },
-      {
-        "not": {
-          "field": "Microsoft.Storage/storageAccounts/enableBlobEncryption",
-          "equals": "True"
-        }
-      }
-    ]
-  }
-}
-                                    </textarea>
-                                </div>
-                                <button class="mainActionButton" type="submit">Edit Existing</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-<div>
+<div class="designerHost">
+    <div class="policySection">
+        <span class="policySectionTitle">Create blank policy rule</span>
+        <span class="policySectionInfo">This option allows you to start designing a new policy from scratch.</span>
+        <div>
+            <form method="POST" enctype="multipart/form-data" asp-controller="Policy" asp-action="new">
+                <button class="mainActionButton" type="submit">Create New Policy</button>
+            </form>
+        </div>
+    </div>
+    <div class="policySection">
+        <span class="policySectionTitle">Edit existing policy rule</span>
+        <span class="policySectionInfo">This option allows you to paste an existing policy rule and continue editing it using the visual designer.</span>
+        <div>
+            <form method="POST" enctype="multipart/form-data" asp-controller="Policy" asp-action="existing">
+                <div>
+                    <textarea class="existingPolicyText" name="JsonText">
+{
+    "then": {
+        "effect": "deny"
+    },
+    "if": {
+        "allOf": [
+        {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts"
+        },
+        {
+            "not": {
+                "field": "Microsoft.Storage/storageAccounts/enableBlobEncryption",
+                "equals": "True"
+            }
+        }]
+    }
+}
+                    </textarea>
+                </div>
+                <button class="mainActionButton" type="submit">Edit Existing</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 @section scripts {
