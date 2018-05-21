@@ -5,6 +5,13 @@ function uuidv4() {
     });
 }
 
+var LoggicalToExportMapping = new Map([
+    ['not', 'not'],
+    ['allof', 'allOf'],
+    ['anyof', 'anyOf'],
+    ['if', 'if'],
+]);
+
 export class PolicyRule {
 
     if: PolicyRuleIfNode;
@@ -62,7 +69,8 @@ export class PolicyRule {
         }
         else {
             let children = node.children.map(c => this.serializeNodeToSchema(c));
-            logical[node.logicalType] = children;
+            let logicalKey = LoggicalToExportMapping.get(node.logicalType);
+            logical[logicalKey] = children;
         }
 
         return logical;
