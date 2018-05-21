@@ -115,29 +115,15 @@ export class App extends React.Component<Props, State> {
         }
 
         return (
-
-            // const button
-
-            <div className="appContent">
-                <div className="header">
-                    <h1 className="title">Azure Resource Policy Designer</h1>
-                    <nav className="appNavigation">
-                        <ul>
-                            <li className="appNavigationItem"><a href="/">Home</a></li>
-                            <li className="appNavigationItem"><a href="https://github.com/milannankov/azure-resource-policy-designer" target="_blank">Github</a></li>
-                        </ul>
-                    </nav>
+            <div className="designerHost">
+                <div className="mainActions">
+                    <button className="mainActionButton" disabled={this.state.operationInProgess} onClick={this.handleExportClick}>Export</button>
+                    <button className="mainActionButton" disabled={this.state.operationInProgess} onClick={this.handleSaveClick}>Save</button>
                 </div>
-                <div className="designerHost">
-                    <div className="mainActions">
-                        <button className="mainActionButton" disabled={this.state.operationInProgess} onClick={this.handleExportClick}>Export</button>
-                        <button className="mainActionButton" disabled={this.state.operationInProgess} onClick={this.handleSaveClick}>Save</button>
-                    </div>
-                    <PolicyDesigner
-                        rule={this.state.policyRule}
-                        suggestedValuesProvider={this.provideSuggestedValues}
-                        nodeOperatons={this.nodeOperatons} />
-                </div>
+                <PolicyDesigner
+                    rule={this.state.policyRule}
+                    suggestedValuesProvider={this.provideSuggestedValues}
+                    nodeOperatons={this.nodeOperatons} />
             </div>
         );
     }

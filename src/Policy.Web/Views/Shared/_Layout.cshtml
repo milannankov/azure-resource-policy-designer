@@ -7,13 +7,32 @@
     <base href="~/" />
 
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/kendo/kendo.common-material.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/kendo/kendo.material.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/fontawesome5-all.min.css" asp-append-version="true" />
 </head>
 <body>
-    @RenderBody()
+
+    <div id="app" class="container">
+        <div class="header">
+            <h1 class="title">Azure Resource Policy Designer</h1>
+            <nav class="appNavigation">
+                <ul>
+                    <li class="appNavigationItem"><a href="/">Home</a></li>
+                    <li class="appNavigationItem"><a href="/about">About</a></li>
+                    <li class="appNavigationItem"><a href="https://github.com/milannankov/azure-resource-policy-designer" target="_blank">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="appContent">
+            @RenderBody()
+        </div>
+    </div>
+
     <script src="~/dist/vendor.js" asp-append-version="true"></script>
     @RenderSection("scripts", required: false)
+    
 </body>
 </html>
